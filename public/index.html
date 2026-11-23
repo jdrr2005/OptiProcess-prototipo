@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OptiProcess Tech | Prototipo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="login" class="login hide">
+  <form id="lf" class="card">
+    <h1>⚙️ OptiProcess Tech</h1>
+    <p class="muted">Gestión integral de procesos empresariales</p>
+    <label>Usuario<input id="lu" autocomplete="username" required></label>
+    <label>Contraseña<input id="lp" type="password" autocomplete="current-password" required></label>
+    <button class="btn">Ingresar</button>
+    <div class="demo muted"><b>Usuarios demo</b><br>admin / admin123 · supervisor / super123 · operario / oper123</div>
+  </form>
+</div>
+<div id="app" class="app hide">
+  <aside id="side"><div class="brand">⚙️ OptiProcess</div><nav id="nav"></nav></aside>
+  <main>
+    <header>
+      <button id="burger" class="icon">☰</button><h2 id="title"></h2><span class="grow"></span>
+      <span id="live" class="muted">● en vivo</span>
+      <div class="bell"><button id="bellb" class="icon">🔔<b id="bcount"></b></button><div id="bpanel" class="panel hide"></div></div>
+      <button id="theme" class="icon" title="Modo oscuro">🌓</button>
+      <span id="who" class="chip"></span><button id="out" class="btn ghost">Salir</button>
+    </header>
+    <section id="view"></section>
+  </main>
+</div>
+<div id="modal" class="modal hide"><div class="card"><h3 id="mt"></h3><form id="mf"></form></div></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
